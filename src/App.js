@@ -2,6 +2,7 @@ import './index.css';
 import Employee from './components/Employee';
 import {useState} from "react";
 import AddEmployee from "./components/AddEmployee";
+import EditEmployee from "./components/EditEmployee";
 
 function App() {
   let showEmployees = true;
@@ -83,17 +84,23 @@ function App() {
             <>
               <div className={"flex flex-wrap items-center justify-center"}>
                 {employees.map((employee) => {
+                  const editEmployee = (<EditEmployee
+                      id={employee.id}
+                      name={employee.name}
+                      role={employee.role}
+                      updateEmployee={updateEmployee}/>);
+
                   return <Employee
                       key={employee.id}
                       id={employee.id}
                       name={employee.name}
                       role={employee.role}
                       img={employee.img}
-                      updateEmployee={updateEmployee}
+                      editEmployee={editEmployee}
                   />;
                 })}
               </div>
-              <AddEmployee addEmployee={addEmployee} />
+              <AddEmployee addEmployee={addEmployee}/>
             </>
             :
             <p>You cannot see the employees</p>

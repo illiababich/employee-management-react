@@ -1,5 +1,3 @@
-import EditEmployee from "./EditEmployee";
-
 function Employee(props) {
   return (
       <div
@@ -7,7 +5,7 @@ function Employee(props) {
         <img
             className="object-cover rounded-full h-[100px] w-[100px] block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
             src={props.img}
-            alt="Photo"/>
+            alt="Profile photo"/>
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
             <p className="text-lg text-black font-semibold">
@@ -17,11 +15,7 @@ function Employee(props) {
               {props.role}
             </p>
           </div>
-          <EditEmployee
-              id={props.id}
-              name={props.name}
-              role={props.role}
-              updateEmployee={props.updateEmployee}/>
+          {props.editEmployee}
         </div>
       </div>
   );
