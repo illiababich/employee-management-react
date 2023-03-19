@@ -46,9 +46,10 @@ export default function Header(props) {
                                   key={item.name}
                                   to={item.href}
                                   className={({isActive}) => {
-                                    return "px-3 py-2 text-sm font-medium no-underline " + (!isActive
-                                        ? "text-gray-300 hover:bg-gray-700 rounded hover:text-white"
-                                        : "bg-gray-900 text-white rounded");
+                                    return "navbar-icon px-3 py-2 text-sm font-medium no-underline "
+                                        + (!isActive
+                                        ? "text-gray-300 hover:bg-gray-700 hover:text-white"
+                                        : "bg-gray-900 text-white");
                                   }}
                               >
                                 {item.name}
@@ -61,7 +62,7 @@ export default function Header(props) {
                         className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                       <button
                           type="button"
-                          className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                          className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white transition-all duration-300 ease-linear"
                       >
                         <span className="sr-only">View notifications</span>
                         <BellIcon className="h-6 w-6" aria-hidden="true"/>

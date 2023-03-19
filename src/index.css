@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .navbar-icon {
+        @apply relative flex items-center justify-center
+        mt-2 mb-2 mx-auto
+        bg-gray-400 hover:bg-violet-500 dark:bg-gray-800
+        hover:rounded-xl rounded-3xl
+        transition-all duration-300 ease-linear
+        cursor-pointer shadow-lg;
+    }
+}

@@ -1,5 +1,5 @@
 import '../../index.css';
-import Employee from '../../components/Employee';
+import EmployeeCard from '../../components/EmployeeCard';
 import {useState} from "react";
 import AddEmployee from "../../components/AddEmployee";
 import EditEmployee from "../../components/EditEmployee";
@@ -90,7 +90,7 @@ function Employees() {
                       role={employee.role}
                       updateEmployee={updateEmployee}/>);
 
-                  return <Employee
+                  return <EmployeeCard
                       key={employee.id}
                       id={employee.id}
                       name={employee.name}
