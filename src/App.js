@@ -3,6 +3,7 @@ import Employee from './components/Employee';
 import {useState} from "react";
 import AddEmployee from "./components/AddEmployee";
 import EditEmployee from "./components/EditEmployee";
+import Header from "./components/Header";
 
 function App() {
   let showEmployees = true;
@@ -79,10 +80,11 @@ function App() {
   }
 
   return (
-      <div className="App">
+      <div className="App bg-gray-200 min-h-screen">
+        <Header/>
         {showEmployees ?
             <>
-              <div className={"flex flex-wrap items-center justify-center"}>
+              <div className={"flex flex-wrap items-center justify-center my-"}>
                 {employees.map((employee) => {
                   const editEmployee = (<EditEmployee
                       id={employee.id}
