@@ -1,4 +1,4 @@
-import '../../../index.css';
+import '../../index.css';
 import EmployeeCard from '../../components/EmployeeCard';
 import {useState} from "react";
 import AddEmployee from "../../components/AddEmployee";
