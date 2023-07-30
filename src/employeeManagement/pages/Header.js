@@ -90,7 +90,7 @@ export default function Header(props) {
                             <Menu.Item>
                               {({active}) => (
                                   <a
-                                      href="/profile"
+                                      href="/Users/illiababich/Desktop/IdeaProjects/react_20h_course/src/app1/pages/Profile"
                                       className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                   >
                                     Your Profile
@@ -100,7 +100,7 @@ export default function Header(props) {
                             <Menu.Item>
                               {({active}) => (
                                   <a
-                                      href="/settings"
+                                      href="/Users/illiababich/Desktop/IdeaProjects/react_20h_course/src/app1/pages/Settings"
                                       className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                   >
                                     Settings
@@ -110,7 +110,7 @@ export default function Header(props) {
                             <Menu.Item>
                               {({active}) => (
                                   <a
-                                      href="/login"
+                                      href="/Users/illiababich/Desktop/IdeaProjects/react_20h_course/src/app1/pages/Login"
                                       className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                   >
                                     Sign out
